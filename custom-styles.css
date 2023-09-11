@@ -1,0 +1,93 @@
+@font-face {
+  font-family: RobinsonPress;
+  src: url(fonts/Robinson\ Press.otf);
+}
+
+@font-face {
+  font-family: RobinsonRegular;
+  src: url(fonts/Robinson\ Regular.otf);
+}
+
+@font-face {
+  font-family: RobinsonOutline;
+  src: url(fonts/Robinson\ Outline.otf);
+}
+
+@font-face {
+  font-family: PermanentMarker;
+  src: url(fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu-Medium.ttf);
+}
+
+.headerPrimary {
+  font-family: Ubuntu;
+}
+
+.brandText {
+  font-family: RobinsonPress;
+}
+
+.highlight {
+  font-family: PermanentMarker;
+}
+
+#logoJumpit {
+  max-width: 5vw;
+}
+
+.nav-item {
+  border-bottom: solid transparent;
+  transition: 0.5s;
+}
+
+.nav-item:hover {
+  border-bottom: solid #9ee493;
+}
+
+#linkDisabled:hover {
+  border-bottom: solid transparent;
+}
+
+#intro {
+  background: linear-gradient(
+    to right,
+    #d4dccd 0%,
+    #d4dccd 64%,
+    #db222a 64%,
+    #db222a 100%
+  );
+}
+
+#imageFBK {
+  max-width: 45vw;
+}
+
+#ultimateCard {
+  background-image: url(images/ultimate-card-bg-resized.png);
+  background-size: cover;
+}
+
+#imagePassion {
+  max-width: 50vw;
+}
+
+#list {
+  background-size: cover;
+  background-position: bottom;
+}
+
+#contact {
+  background-image: url(images/bg-contact.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#update {
+  background-image: url(images/bg-register.png);
+  background-size: cover;
+  background-position: center;
+}

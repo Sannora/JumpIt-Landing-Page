@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="custom-styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Bootstrap Testpage</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light border-bottom border-dark border-3"
+    >
+      <div class="container-xxl">
+        <a class="navbar-brand me-5" href="#"
+          ><img id="logoJumpit" class="img-fluid" src="images/jumpit-logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="text-warning nav-link" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-warning nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-warning nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-warning nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-warning nav-link" href="#">Contact</a>
+            </li>
+            <li id="linkDisabled" class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Coming Soon</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Intro-->
+    <section id="intro" class="py-5">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-1 highlight">Energize</div>
+              <div class="display-5 text-muted highlight">Your Passion</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#pricing" class="btn btn-dark btn-lg brandText fs-3 px-4"
+              >Shop <span class="text-secondary">It</span></a
+            >
+            <a
+              href="#sidebar"
+              class="d-block mt-3 text-warning"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore the Energy
+            </a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <span class="toolt" data-bs-placement="bottom"
+              ><img
+                id="imageFBK"
+                class="img-fluid py-5"
+                src="images/fbk-280101-reworked.png"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pricing Cards-->
+    <section id="pricing" class="bg-dark py-5">
+      <div class="container lg">
+        <div class="text-center">
+          <h2 class="display-5 text-primary">Pricing Plans</h2>
+          <p class="lead text-light">
+            Chose a pricing plan to
+            <span class="highlight">suit your energy</span>.
+          </p>
+        </div>
+        <div class="row my-5 justify-content-center align-items-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-primary border-3 bg-light">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title headerPrimary">Starter Edition</h4>
+                <p class="card-subtitle lead">
+                  Newsteller & Jump Magazine Subscription
+                </p>
+                <p class="display-5 text-primary fw-bold my-4">$13.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  error magni reprehenderit?
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-outline-primary mt-3 brandText text-dark fs-3 px-4"
+                  >Jump <span class="text-secondary">It</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div id="ultimateCard" class="card border-0 py-3 bg-dark">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-4">
+                <h4 class="card-title text-primary headerPrimary">
+                  Ultimate Edition
+                </h4>
+                <p class="card-subtitle lead text-light">
+                  Unlock your energy with
+                  <span class="text-secondary fw-bold">ultimate</span> passion!
+                </p>
+                <p class="display-5 text-primary fw-bold my-4">$18.99</p>
+                <p class="card-text mx-5 text-light d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  error magni reprehenderit?
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-outline-primary mt-3 brandText fs-3 px-4"
+                  >Jump <span class="text-secondary">It</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-primary border-3 bg-light">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title headerPrimary">Complete Edition</h4>
+                <p class="card-subtitle lead">
+                  Full Access to All JumpIt Contents
+                </p>
+                <p class="display-5 text-primary fw-bold my-4">$27.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  error magni reprehenderit?
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-outline-primary mt-3 brandText text-dark fs-3 px-4"
+                  >Jump <span class="text-secondary">It</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Accordion-->
+    <section id="accordion" class="bg-light py-5">
+      <div class="container-md">
+        <div class="text-center">
+          <h2 class="highlight fs-1">About the Energy</h2>
+          <p class="lead text-muted">
+            Your first glance at the Jump environment
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5 g-0 justify-content-around align-items-center">
+        <div class="col-6 col-lg-4">
+          <img id="imagePassion" src="images/passion.png" class="img-fluid" />
+        </div>
+
+        <div class="accordion col-6 col-lg-4" id="chapters">
+          <div class="accordion-item">
+            <h2 id="heading-1" class="accordion-header">
+              <button
+                class="accordion-button text-secondary bg-dark headerPrimary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Who are We?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-1"
+              data-bs-parent="#chapters"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+                officia totam repellat dicta consectetur excepturi eius.
+                Delectus unde alias laudantium blanditiis eaque ad corrupti,
+                aspernatur cupiditate voluptatum consectetur veritatis eveniet?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="heading-2" class="accordion-header">
+              <button
+                class="accordion-button text-secondary bg-dark headerPrimary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo"
+              >
+                Why JumpIt?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="heading-2"
+              data-bs-parent="#chapters"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Numquam odit totam aliquid earum ut corporis natus delectus
+                quidem architecto vero vitae in reiciendis, voluptas at
+                possimus, doloremque eligendi? Inventore, exercitationem?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="heading-3" class="accordion-header">
+              <button
+                class="accordion-button text-secondary bg-dark headerPrimary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseThree"
+              >
+                What Do We Produce?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-3"
+              data-bs-parent="#chapters"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+                magnam cumque dolorum, beatae at aliquam, nulla tempora quasi
+                nisi aperiam minus exercitationem incidunt fuga hic numquam eos
+                reiciendis recusandae dolorem.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="heading-4" class="accordion-header">
+              <button
+                class="accordion-button text-secondary bg-dark headerPrimary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseFour"
+              >
+                What is JumpIt Ultimate?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-4"
+              data-bs-parent="#chapters"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit repudiandae odio qui! Quo incidunt, beatae odit
+                modi, laborum praesentium aliquid quam, vitae quaerat odio quas
+                consectetur repellat assumenda dolore enim!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="heading-5" class="accordion-header">
+              <button
+                class="accordion-button text-secondary bg-dark headerPrimary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="true"
+                aria-controls="collapseFive"
+              >
+                What is JamppIt?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading-5"
+              data-bs-parent="#chapters"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+                aut id quisquam rerum odit sequi, quas, iusto, nobis sunt fugiat
+                ullam repudiandae mollitia eaque dicta minima nulla eligendi
+                voluptatem? Eaque!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--List-->
+    <section id="list" class="bg-dark py-5">
+      <div class="container-lg">
+        <div class="text-center my-5">
+          <h2 class="display-5 text-primary">Our Palette</h2>
+          <p class="lead text-light my-5">
+            Check out our unique color palette we created to
+            <span class="highlight">suit your energy</span>.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div id="list-tab" class="list-group m-5 py-5" role="tablist">
+              <a
+                class="list-group-item list-group-item-action active text-dark"
+                id="list-home-list"
+                data-bs-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="list-home"
+                >Charcoal</a
+              >
+              <a
+                class="list-group-item list-group-item-action text-dark"
+                id="list-profile-list"
+                data-bs-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="list-profile"
+                >Celadon</a
+              >
+              <a
+                class="list-group-item list-group-item-action text-dark"
+                id="list-messages-list"
+                data-bs-toggle="list"
+                href="#list-messages"
+                role="tab"
+                aria-controls="list-messages"
+                >Rojo</a
+              >
+              <a
+                class="list-group-item list-group-item-action text-dark"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="list-settings"
+                >Mardigras</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content m-5" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active text-light"
+                id="list-home"
+                role="tabpanel"
+                aria-labelledby="list-home-list"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequatur ea cum soluta autem a debitis neque ipsam nulla
+                minus dicta tempora molestias, doloremque, minima, nisi hic
+                illum asperiores. Molestiae, sit!
+              </div>
+              <div
+                class="tab-pane fade text-light"
+                id="list-profile"
+                role="tabpanel"
+                aria-labelledby="list-profile-list"
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ea
+                necessitatibus reprehenderit praesentium explicabo doloremque
+                porro corrupti consectetur sed eaque earum, sunt perferendis
+                architecto quae odit dolorem et ut quibusdam.
+              </div>
+              <div
+                class="tab-pane fade text-light"
+                id="list-messages"
+                role="tabpanel"
+                aria-labelledby="list-messages-list"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                ipsa temporibus perspiciatis optio consequatur veritatis nihil
+                rerum, eius ab minus delectus dolorum quod accusamus maxime
+                architecto voluptates neque. Soluta, quis.
+              </div>
+              <div
+                class="tab-pane fade text-light"
+                id="list-settings"
+                role="tabpanel"
+                aria-labelledby="list-settings-list"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                ratione explicabo odit, repudiandae vel quisquam doloribus
+                dolorem nemo repellat in quas nostrum atque sed officiis facilis
+                commodi iste unde nihil?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Form-->
+    <section id="contact" class="bg-light py-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2 class="highlight text-primary">Jump In!</h2>
+          <p class="text-light fw-bold">Get in touch with us.</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label"></label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope-fill"></i
+                ></span>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your e-mail address"
+                />
+                <span class="input-group-text">
+                  <span
+                    class="toolt"
+                    data-bs-placement="right"
+                    title="Please enter a valid e-mail address we can reply to."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <textarea id="query" class="form-control"></textarea>
+              <label class="text-primary" for="query">Your Query...</label>
+
+              <div class="mb-4 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-warning brandText fs-3 px-4"
+                >
+                  Jump <span class="text-secondary">it</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Update-->
+    <section id="update" class="bg-dark py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="highlight text-secondary">Jumpt It Up!</h2>
+          <p class="lead text-primary">
+            Subscribe to our newsteller to get the latest updates and news about
+            JumpIt.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+              reiciendis quibusdam, dolorum modi vitae, non, alias consectetur
+              impedit laudantium ea repellat adipisci voluptates quis beatae
+              enim tenetur deleniti iusto quam!
+            </p>
+            <button
+              class="btn btn-primary my-5 brandText fs-3 px-4"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Jump <span class="text-secondary">It</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Modal-->
+    <div
+      id="reg-modal"
+      class="modal fade"
+      tabindex="-1"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title" class="modal-title">Get the Latest Updates</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+              dolore accusantium, molestiae explicabo illo quasi velit dicta
+              distinctio vitae nihil facere, quam assumenda mollitia atque
+              laborum? Molestiae alias rerum provident!
+            </p>
+            <label for="modal-email" class="form-label">
+              Your E-Mail Address:
+            </label>
+            <input
+              type="email"
+              id="modal-email"
+              class="form-control"
+              placeholder="Enter a valid e-mail address."
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Offcanvas-->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 id="sidebar-label" class="offcanvas-title">Our Collections</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+          praesentium at temporibus quisquam totam sint ad maiores. Placeat a
+          pariatur est mollitia blanditiis vitae aut quisquam laborum voluptatem
+          architecto! Dolorum.
+        </p>
+        <div class="dropdown mt-3">
+          <button
+            id="book-dropdown"
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Choose a collection
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+            <li><a href="#" class="dropdown-item">Alpine</a></li>
+            <li><a href="#" class="dropdown-item">Sahara</a></li>
+            <li><a href="#" class="dropdown-item">Pacific</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="scriptIndex.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tootlt");
+      tooltips.forEach((toolt) => {
+        new bootstrap.Tooltip(toolt);
+      });
+    </script>
+  </body>
+</html>
